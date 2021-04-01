@@ -1,0 +1,45 @@
+The Task
+Your task is to fill in the missing lines to complete the code given above. You could find the comments next to the code to know the work to be done. Given below are the methods to be implemented:
+1.	Restaurant.java
+o	getMenu()
+o	isRestaurantOpen()
+
+2.	RestaurantService.java
+o	findRestaurantByName()
+
+The following test methods are also to be implemented:
+1.	RestaurantServiceTest.java
+o	searching_for_existing_restaurant_should_return_expected_restaurant_object()
+o	searching_for_non_existing_restaurant_should_throw_exception()
+2.	RestaurantTest.java
+o	Is_restaurant_open_should_return_true_if_time_is_between_opening_and_closing_time()
+o	Is_restaurant_open_should_return_false_if_time_is_outside_opening_and_closing_time()
+All the above methods given above have to be implemented as intended. The test cases must be implemented as the name suggests and must pass.
+After completing both the methods and their corresponding test methods, you must refactor all the repeated lines of code.
+
+
+Part 3: Adding a Feature using TDD
+If you had downloaded the code and had a look at the classes, you would have observed that there is a feature present in the Mock UI that has not been implemented yet in the back end code given.
+
+
+                                           The order total is displayed
+
+The feature shown above, where the UI displays the total order value has not yet been implemented in the backend code. Your task is to design this code yourself and test it too!
+The Task
+In the stub code, you need to add another method that returns the order value, given the name of the items in <String> format.
+This method should be developed, the TDD way. As a refresher, the process to be followed has been listed below:
+•	List down requirements: what parameter has to be passed, what should be returned
+•	Write failing test cases for the feature to be developed
+•	Develop the feature as required to make the test case pass
+•	Running the test case should now lead to a pass case scenario and line coverage should be 98% or more. (You can ignore the methods written for output formatting)
+A few pointers that may be of use:
+•	The only purpose of this feature should be to display the order total. There is no necessity to store the chosen items or the order value.
+•	You are free to choose whatever input format you prefer:
+o	Could be <methodName>(<itemName1>,<itemName2>,<itemName3>,...)
+o	Could be <methodName>(<list of itemNames>)
+•	The name of the item returned when the user selects the item is always in the menu, hence a fail case scenario/Exception scenario would be unnecessary.
+•	You may add any attribute if necessary, you may add more than one method too, if necessary.
+•	You would have to figure out where to place these attributes, methods and test methods. You should also decide on their visibility.
+
+NOTE: Before you start attempting this part, it is recommended that you go through the rubrics available in the next Segment to have an understanding of what is desired. You may also have a look at the submission guidelines given in the 4th Segment to understand the deliverables.
+
